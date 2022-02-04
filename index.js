@@ -11,6 +11,20 @@ btn.addEventListener("click" ,() => {
         console.log(getData);
         var content = document.querySelector(".data");
 
+        var box = content.lastElementChild;  
+        while (box) { 
+            content.removeChild(box); 
+            box = content.lastElementChild; 
+        } 
+
+        var index = 0;
+        for(var i=0;i<185;i++){
+            if(getData.Countries[i].Country.toLowerCase() == text.toLowerCase()){
+                index = i;
+                break;
+            }
+        }
+
 
         let data = document.querySelector(".data");
         data.innerHTML = `<div class="box">

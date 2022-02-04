@@ -25,7 +25,6 @@ btn.addEventListener("click" ,() => {
             }
         }
 
-
         let data = document.querySelector(".data");
         data.innerHTML = `<div class="box">
                         <div class="head">
